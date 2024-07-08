@@ -49,7 +49,6 @@ const SignUp = () => {
             setFormData(updatedVal)
         }
     }
-
     const successCallBack = (data: any) => {
         localStorage.setItem('userInfo', JSON.stringify(data))
         localStorage.setItem('token', JSON.stringify(data?.token))
@@ -69,6 +68,10 @@ const SignUp = () => {
         const { fullname, email, password, fullnameValidate, emailValid, passwordValid } = formData
         try {
             if (fullname?.length > 3 && email && email?.length > 6 && password && fullnameValidate && emailValid && passwordValid) {
+                setTimeout(() => {
+                    window.location.href = '/dashboard'
+                    setLoading(false)
+                }, 1500)
                 // signUpHandlers(fullname, email, password, successCallBack, faildCallBack)
             }
             else {
