@@ -105,13 +105,6 @@ export default function Header({ localeHeader }: any) {
                             </Link>
                             <Link
                                 onClick={handleLinkClick}
-                                href="/about"
-                                className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/about") ? "text-primary" : "text-desc"}`}
-                            >
-                                {localeHeader?.about}
-                            </Link>
-                            <Link
-                                onClick={handleLinkClick}
                                 href="/contact"
                                 className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/contact") ? "text-primary" : "text-desc"}`}
                             >
@@ -119,14 +112,14 @@ export default function Header({ localeHeader }: any) {
                             </Link>
                             <Link
                                 onClick={handleLinkClick}
-                                href="/auth/login"
+                                href="/login"
                                 className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/login") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.login}
                             </Link>
                             <Link
                                 onClick={handleLinkClick}
-                                href="/auth/signup"
+                                href="/signup"
                                 className={`no-underline font-[500] text-[1.5rem] mt-10 ${pathname.endsWith("/signup") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.signup}
@@ -151,28 +144,22 @@ export default function Header({ localeHeader }: any) {
                         </div>
                     </>
                     : <div className="hidden sm:block" data-aos="fade-down">
-                        <nav className="flex items-center h-[50px] pt-2 md:gap-x-[1rem] xl:gap-x-[1.5rem] !font-epilogue text-[1rem] leading-[1rem] tracking-[-0.48px] !font-[500] no-italic text-nowrap">
+                        <nav className="flex items-center h-[50px] .pt-2 md:gap-x-[1rem] xl:gap-x-[1.5rem] !font-epilogue text-[1rem] leading-[1rem] tracking-[-0.48px] !font-[500] no-italic text-nowrap">
                             <Link
-                                href="/about" data-aos="fade-down"
-                                className={`no-underline px-[10px] ${pathname.endsWith("/about") ? "text-primary" : "text-desc"}`}
-                            >
-                                {localeHeader?.about}
-                            </Link>
-                            <Link
-                                href="/contact" data-aos-duration="1200" data-aos="fade-down"
-                                className={`no-underline px-[10px] ${pathname.endsWith("/contact") ? "text-primary" : "text-desc"}`}
+                                href="/contact" data-aos="fade-down"
+                                className={`flex items-center h-full no-underline px-[13px] ${pathname.endsWith("/contact") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.contact}
                             </Link>
                             <Link
-                                href="/auth/login" data-aos-duration="1400" data-aos="fade-down"
-                                className={`no-underline px-[10px] ${pathname.endsWith("/login") ? "text-primary" : "text-desc"}`}
+                                href="/login" data-aos-duration="1200" data-aos="fade-down"
+                                className={`flex items-center h-full no-underline px-[13px] ${pathname.endsWith("/login") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.login}
                             </Link>
                             <Link
-                                href="/auth/signup" data-aos-duration="1600" data-aos="fade-down"
-                                className={`no-underline px-[10px] ${pathname.endsWith("/signup") ? "text-primary" : "text-desc"}`}
+                                href="/signup" data-aos-duration="1400" data-aos="fade-down"
+                                className={`flex items-center h-full no-underline px-[13px] ${pathname.endsWith("/signup") ? "text-primary" : "text-desc"}`}
                             >
                                 {localeHeader?.signup}
                             </Link>

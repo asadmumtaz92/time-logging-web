@@ -1,6 +1,7 @@
+import React from "react"
 import "@/app/globals.css"
 import type { Metadata } from "next"
-import { useTranslations } from 'next-intl'
+import { useTranslations } from "next-intl"
 import { Fonts } from "@/utils/fonts"
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
         "android app development",
         "wordpress development",
         "software development",
-        "Time Logging"
+        "Time Logging",
     ],
 }
 
@@ -38,7 +39,6 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
     const localeHeader = {
         author: t('author'),
         home: t(`home`),
-        about: t(`about`),
         contact: t(`contact`),
         login: t(`login`),
         signup: t(`signup`),
@@ -47,11 +47,11 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
 
     return (
         <html lang={locale}>
-            <AOSInit />
-            <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-black`}>
+            <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-primary`}>
+                <AOSInit />
                 <CursorFollower />
                 <Header localeHeader={localeHeader} />
-                <div className="pt-[50px]">
+                <div className="pt-[50px] min-h-[100vh]">
                     {children}
                 </div>
                 <Footer />

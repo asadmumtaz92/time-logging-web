@@ -15,21 +15,16 @@ const SiteLinks = () => {
         },
         {
             id: 2,
-            title: t('about'),
-            url: '/about',
-        },
-        {
-            id: 3,
             title: t('contact'),
             url: '/contact',
         },
         {
-            id: 4,
+            id: 3,
             title: t('login'),
             url: '/login',
         },
         {
-            id: 5,
+            id: 4,
             title: t('signup'),
             url: '/signup',
         },
