@@ -35,7 +35,7 @@ const SimpleSteps = () => {
         return (
             <div key={id} data-aos="fade-up" className={`border-[1px] border-box-stroke rounded-[15px] px-[16px] lg:px-[30px] py-[25px] lg:py-[40px] m-auto w-full max-w-[500px]`}>
                 <div className='flex items-center justify-center'>
-                    <Image data-aos="zoom-in" src={image} priority className='flex object-center object-contain' width={120} height={120} alt={`${title}`} />
+                    <Image data-aos="zoom-in" src={image} priority className='flex object-center object-contain' width={80} height={100} alt={`${title}`} />
                 </div>
 
                 <div className='flex flex-col mt-[25px] text-center'>
