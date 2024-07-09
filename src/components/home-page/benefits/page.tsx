@@ -36,7 +36,7 @@ const Benefits = () => {
                     <h4 className='text-primary text-left text-[1.25rem] leading-[1.75rem] lg:text-[1.5rem] lg:leading-[2.125rem] font-[500]'>
                         {title}
                     </h4>
-                    <p className='text-desc text-[1rem] leading-[1.5rem] md:text-[1.3rem] leading-[1.5rem] font-[400]'>
+                    <p className='text-desc text-[1rem] leading-[1.5rem] md:text-[1.3rem] leading-[1.5rem] font-[300]'>
                         {desc}
                     </p>
                 </div>

@@ -59,7 +59,7 @@ const PackagesComponent = () => {
         const { id, title, price, desc, } = data?.data
         return (
             <div key={id} className="flex flex-col items-center flex-1 rounded-xl overflow-hidden border border-border w-full h-full max-w-[500px] m-auto">
-                <div className="animate-background-shine bg-[linear-gradient(130deg,#11005E,35%,#11005ECC,60%,#11005E)] bg-[length:200%_100%] text-6xl py-[50px] xl:p-[50px] text-white font-[600] w-full text-center">
+                <div className="animate-background-shine bg-[linear-gradient(130deg,#11005E,35%,#11005ECC,60%,#11005E)] bg-[length:200%_100%] text-6xl py-[60px] xl:p-[50px] text-white font-[600] w-full text-center">
                     <p className=''>
                         {price}
                         <span className='text-3xl'>DKK</span>
@@ -101,7 +101,7 @@ const PackagesComponent = () => {
                 </div>
             </div>
 
-            <div data-aos="fade-up" className="flex flex-col items-center w-full pt-[30px] md:pt-[40px] lg:pt-[50px]">
+            <div className="flex flex-col items-center w-full pt-[30px] md:pt-[40px] lg:pt-[50px]">
                 <p className='text-primary text-[1.3rem] font-[500] text-center mb-[20px]'>
                     {t('upto_200')}
                 </p>

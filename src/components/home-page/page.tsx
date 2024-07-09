@@ -3,9 +3,9 @@ import React from 'react'
 import HeroSection from './hero-section/page'
 import Clients from './clients/page'
 import HowGetStart from './how-get-started-section/page'
-import HowGetStart2 from './how-get-started-section/page-copy'
 import Pricing from './pricing-section/page'
 import BenefitSection from './benefits/page'
+import WhyChoose from './why-choose/page'
 
 
 const HomePage = () => {
@@ -14,10 +14,10 @@ const HomePage = () => {
     return (
         <React.Fragment>
             <HeroSection />
-            <Clients />
+            {/* <Clients /> */}
             <HowGetStart />
-            <HowGetStart2 />
             <Pricing />
+            <WhyChoose />
             <BenefitSection />
         </React.Fragment>
     )

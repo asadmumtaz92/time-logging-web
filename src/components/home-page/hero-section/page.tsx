@@ -23,7 +23,7 @@ const HeroSection = () => {
                     {t('hs_title')}
                 </h2>
 
-                <p className="mt-[20px] text-desc [font-size:_clamp(0.8rem,0.8rem+1vw,1.3rem)] leading-[1.1] w-[100%] md:w-[90%] lg:w-[95%] xl:w-[90%]">
+                <p className="mt-[20px] !font-[300] text-desc [font-size:_clamp(0.8rem,0.8rem+1vw,1.3rem)] leading-[1.1] w-[100%] md:w-[90%] lg:w-[95%] xl:w-[90%]">
                     {t('hs_desc')}
                 </p>
 

@@ -50,7 +50,7 @@ const HowGetStarted = () => {
                     {t('htg_title')}
                 </h2>
 
-                <p className='w-full font-[400] text-desc text-[1.5rem] leading-[2rem] md:text-[2rem] leading-[2.625rem] mb-[48px] text-center mt-3'>
+                <p className='w-full font-[300] text-desc text-[1.5rem] leading-[2rem] md:text-[2rem] leading-[2.625rem] mb-[48px] text-center mt-3'>
                     {t('htg_slug')}
                 </p>
             </div>
