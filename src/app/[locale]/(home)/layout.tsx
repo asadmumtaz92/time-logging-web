@@ -6,10 +6,10 @@ import { Fonts } from "@/utils/fonts"
 
 export const metadata: Metadata = {
     title: {
-        template: "%s - Time Logging",
-        default: "Time Logging",
+        template: "%s - Logged Fair",
+        default: "Logged Fair",
     },
-    description: "Designed By Time Logging",
+    description: "Designed By Logged Fair",
     keywords: [
         "Web development",
         "ios app development",
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         "wordpress development",
         "software development",
         "Time Logging",
+        "Logged Fair"
     ],
 }
 
@@ -47,11 +48,11 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
 
     return (
         <html lang={locale}>
-            <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-primary`}>
+            <body className={`${Fonts.jost} bg-white text-primary`}>
                 <AOSInit />
                 <CursorFollower />
                 <Header localeHeader={localeHeader} />
-                <div className="pt-[50px] min-h-[100vh]">
+                <div className="pt-[50px] min-h-[100vh] !font-jost">
                     {children}
                 </div>
                 <Footer />

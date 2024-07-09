@@ -61,7 +61,7 @@ const config = {
                 'divider': '#E8E7EE',
             },
             fontFamily: {
-                epilogue: ['var(--font-epilogue)'],
+                jost: ['var(--font-jost)'],
                 impact: ['var(--font-impact)'],
             },
             borderRadius: {
