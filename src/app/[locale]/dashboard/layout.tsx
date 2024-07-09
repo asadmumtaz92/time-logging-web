@@ -1,27 +1,28 @@
+import React from "react"
 import "@/app/globals.css"
 import type { Metadata } from "next"
-import { useTranslations } from 'next-intl'
+import { useTranslations } from "next-intl"
 import { Fonts } from "@/utils/fonts"
 
 export const metadata: Metadata = {
     title: {
-        template: "%s - Time Logging",
-        default: "Time Logging",
+        template: "%s - Logged Fair",
+        default: "Logged Fair",
     },
-    description: "Designed By Time Logging",
+    description: "Designed By Logged Fair",
     keywords: [
         "Web development",
         "ios app development",
         "android app development",
         "wordpress development",
         "software development",
-        "Time Logging"
+        "Time Logging",
+        "Logged Fair"
     ],
 }
 
 import { AOSInit } from "@/components/wrappers/aos"
-import CursorFollower from "@/components/wrappers/cursor/page"
-import Header from "@/components/header/page"
+import Header from "@/components/header/header-dashboard"
 
 interface RootLayoutProps {
     children: React.ReactNode
@@ -36,21 +37,21 @@ const RootLayout = ({ children, params: { locale } }: RootLayoutProps) => {
 
     const localeHeader = {
         author: t('author'),
-        home: t(`home`),
-        about: t(`about`),
-        contact: t(`contact`),
-        login: t(`login`),
-        signup: t(`signup`),
+        dashboard: t('dashboard'),
+        registration: t('registration'),
+        overview: t('overview'),
+        add_user: t('add_user'),
+        corporation: t('corporation'),
+        logout: t(`logout`),
     }
 
 
     return (
         <html lang={locale}>
-            <AOSInit />
-            <body className={`${Fonts.epilogue} ${Fonts.impact} bg-white text-black`}>
-                <CursorFollower />
+            <body className={`${Fonts.jost} bg-white text-primary`}>
+                <AOSInit />
                 <Header localeHeader={localeHeader} />
-                <div className="pt-[50px]">
+                <div className="pt-[50px] min-h-[100vh] !font-jost">
                     {children}
                 </div>
             </body>

@@ -1,17 +1,18 @@
-import { Epilogue, } from "next/font/google"
+import { Jost } from "next/font/google"
 import localFont from 'next/font/local'
+
+const jost = Jost({
+    style: 'normal',
+    variable: '--font-jost',
+    subsets: ['latin']
+})
 
 const impact = localFont({
     src: './fonts/impact.ttf',
     variable: '--font-impact',
-});
-
-const epilogue = Epilogue({
-    subsets: ["latin"],
-    variable: '--font-epilogue',
 })
 
 export const Fonts = {
-    'epilogue': epilogue.className,
+    'jost': jost.className,
     'impact': impact.variable,
 }

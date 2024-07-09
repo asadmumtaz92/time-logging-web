@@ -93,7 +93,7 @@ const ContactForm = ({ formLocale }: ContactFormProps) => {
                 />
 
                 <div className='flex pt-[10px]'>
-                    <button type='submit' disabled={disabled} className={`flex items-center ${disabled ? 'bg-primary text-white' : 'bg-primary text-white'} !font-epilogue text-[1rem] leading-[1rem] font-[500] uppercase not-italic px-[36px] pt-[16px] pb-[13px] rounded-[5px]`}>
+                    <button type='submit' disabled={disabled} className={`flex items-center ${disabled ? 'bg-primary text-white' : 'bg-primary text-white'} !font-jost text-[1rem] leading-[1rem] font-[500] uppercase not-italic px-[36px] pt-[16px] pb-[13px] rounded-[5px]`}>
                         {isLoading
                             ? <div className='w-full h-full flex justify-center items-center'>
                                 <Loader color="black" size={15} className="animate-spin" /> Please wait

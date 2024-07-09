@@ -39,7 +39,6 @@ const Login = () => {
             setFormData(updatedVal)
         }
     }
-
     const successCallBack = (data: any) => {
         localStorage.setItem('userInfo', JSON.stringify(data))
         localStorage.setItem('token', JSON.stringify(data?.token))
@@ -59,6 +58,10 @@ const Login = () => {
         const { email, password, emailValid, passwordValid } = formData
         try {
             if (email && email?.length > 6 && password && emailValid && passwordValid) {
+                setTimeout(() => {
+                    window.location.href = '/dashboard'
+                    setLoading(false)
+                }, 1500)
                 // loginHandlers(email, password, successCallBack, faildCallBack)
             }
             else {
@@ -83,10 +86,10 @@ const Login = () => {
 
 
     return (
-        <div className='flex justify-center items-center w-full sm:min-h-[100vh] px-[20px] text-primary'>
+        <div data-aos="zoom-in" data-aos-duration="400" className='flex justify-center items-center w-full sm:min-h-[100vh] px-[20px] text-primary'>
             <div className='flex flex-col items-start justify-between w-full sm:w-[450px] my-[30px] lg:my-0 border-[0.5px] border-border rounded-[10px] p-[40px] shadow-lg overflow-y-scroll sm:overflow-hidden'>
                 <div className='flex items-center justify-center max-w-[400px] m-auto'>
-                    <h1 className='max-w-[400px] w-full !text-center font-[700] [font-size:_clamp(1.7rem,1.3rem+1vw,3rem)]'>
+                    <h1 className='max-w-[400px] w-full !text-center font-[600] [font-size:_clamp(1.7rem,1.3rem+1vw,3rem)]'>
                         Time Logging
                     </h1>
                     {/* <Image src={'/logo.png'} priority className='max-w-[300px] md:max-w-[400px] w-full m-auto' alt='iTech logo' width={100} height={100} /> */}

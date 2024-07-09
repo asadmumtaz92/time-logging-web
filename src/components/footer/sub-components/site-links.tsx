@@ -15,21 +15,16 @@ const SiteLinks = () => {
         },
         {
             id: 2,
-            title: t('about'),
-            url: '/about',
-        },
-        {
-            id: 3,
             title: t('contact'),
             url: '/contact',
         },
         {
-            id: 4,
+            id: 3,
             title: t('login'),
             url: '/login',
         },
         {
-            id: 5,
+            id: 4,
             title: t('signup'),
             url: '/signup',
         },
@@ -39,8 +34,8 @@ const SiteLinks = () => {
         const { id, title, url, } = data?.data
         return (
             <div key={id} className='w-fit' data-aos="fade-up">
-                <Link href={url} className='flex items-center items-center h-[25px]'>
-                    <p className='text-desc text-[14px] font-[400] leading-[18px] text-left'>{title}</p>
+                <Link href={`#${url}`} className='flex items-center items-center h-[25px]'>
+                <p className='text-white text-[1.1rem] font-[400] leading-[1.4rem] text-left'>{title}</p>
                 </Link>
             </div>
         )
@@ -49,7 +44,7 @@ const SiteLinks = () => {
 
     return (
         <div className='flex flex-col gap-y-[15px]'>
-            <h1 data-aos="fade-up" className='font-[600] text-primary text-[1rem] leading-[1.5rem] text-left'>
+            <h1 data-aos="fade-up" className='font-[600] text-white text-[1.3rem] leading-[1.5rem] text-left'>
                 {t('usefull')}
             </h1>
 

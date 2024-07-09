@@ -29,7 +29,7 @@ const TextArea = ({
 
 
     return (
-        <div className='flex flex-col w-full mb-[24px] !font-epilogue'>
+        <div className='flex flex-col w-full mb-[24px] font-jost'>
             {label && <label htmlFor={label} className='text-desc text-[1rem] leading-[25.6px] font-[400] mb-[8px]'>{label}</label>}
             <textarea
                 id={label}
