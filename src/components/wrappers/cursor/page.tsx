@@ -1,9 +1,11 @@
 "use client"
-
-import React, { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState, useRef, } from "react"
 import "./cursor.css"
 
+
 const CursorFollower = () => {
+
+
     const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 })
     const [currentPosition, setCurrentPosition] = useState({ x: 0, y: 0 })
     const animationFrameRef = useRef(1)
@@ -25,8 +27,8 @@ const CursorFollower = () => {
 
     useEffect(() => {
         const updateCursor = () => {
-            const deltaX = (targetPosition.x - currentPosition.x) / 8
-            const deltaY = (targetPosition.y - currentPosition.y) / 8
+            const deltaX = (targetPosition.x - currentPosition.x) / 3
+            const deltaY = (targetPosition.y - currentPosition.y) / 3
 
             setCurrentPosition((prevPosition) => ({
                 x: Math.min(prevPosition.x + deltaX, window.innerWidth - 10),
