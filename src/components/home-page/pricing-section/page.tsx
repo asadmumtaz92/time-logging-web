@@ -75,7 +75,7 @@ const PackagesComponent = () => {
                             {t('desc')}
                         </div>
                         <ul className='flex flex-col gap-y-[10px] text-desc text-[1.2rem] leading-[1.5rem] font-[300]'>
-                            {desc.map((des: any) => <li className='text-desc'>- {des}</li>)}
+                            {desc.map((des: any) => <li key={des} className='text-desc'>- {des}</li>)}
                         </ul>
                     </div>
                     <button className="mt-[30px] w-full max-w-[300px] py-[10px] rounded-[25px] bg-primary hover:bg-white text-white hover:text-primary border text-[1.2rem] tracking-[0.5px] font-[500] transition duration-500 ease-out">
