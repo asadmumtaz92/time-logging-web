@@ -149,7 +149,7 @@ export default function Header({ localeHeader }: any) {
                                     <Link
                                         locale="dk"
                                         href={replaceLocaleInPathname("dk")}
-                                        className={`!font-epilogue no-underline font-[500] ${pathname.startsWith("/dk") ? "text-primary" : "text-desc"}`}
+                                        className={`font-jost no-underline font-[500] ${pathname.startsWith("/dk") ? "text-primary" : "text-desc"}`}
                                     >
                                         DK
                                     </Link>
@@ -157,7 +157,7 @@ export default function Header({ localeHeader }: any) {
                                     <Link
                                         locale="en"
                                         href={replaceLocaleInPathname("en")}
-                                        className={`!font-epilogue no-underline font-[500] ${pathname.startsWith("/en") ? "text-primary" : "text-desc"}`}
+                                        className={`font-jost no-underline font-[500] ${pathname.startsWith("/en") ? "text-primary" : "text-desc"}`}
                                     >
                                         EN
                                     </Link>
