@@ -33,7 +33,7 @@ const SiteLinks = () => {
     const ProductItem = (data: any) => {
         const { id, title, url, } = data?.data
         return (
-            <div key={id} className='w-fit' data-aos="fade-up">
+            <div key={id} className='w-fit'>
                 <Link href={`#${url}`} className='flex items-center items-center h-[25px]'>
                 <p className='text-white text-[1.1rem] font-[400] leading-[1.4rem] text-left'>{title}</p>
                 </Link>
@@ -44,7 +44,7 @@ const SiteLinks = () => {
 
     return (
         <div className='flex flex-col gap-y-[15px]'>
-            <h1 data-aos="fade-up" className='font-[600] text-white text-[1.3rem] leading-[1.5rem] text-left'>
+            <h1 className='font-[600] text-white text-[1.3rem] leading-[1.5rem] text-left'>
                 {t('usefull')}
             </h1>
 

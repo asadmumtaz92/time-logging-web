@@ -20,7 +20,6 @@ const PackagesComponent = () => {
                 t('price_1_desc4'),
                 t('price_1_desc5'),
                 t('price_1_desc6'),
-                // t('price_1_desc7'),
             ]
         },
         {
@@ -34,7 +33,6 @@ const PackagesComponent = () => {
                 t('price_1_desc4'),
                 t('price_1_desc5'),
                 t('price_1_desc6'),
-                // t('price_2_desc2'),
             ]
         },
         {
@@ -48,9 +46,7 @@ const PackagesComponent = () => {
                 t('price_1_desc4'),
                 t('price_3_desc5'),
                 t('price_1_desc6'),
-                // t('price_2_desc2'),
                 t('price_3_desc2'),
-                // t('price_3_desc3'),
             ]
         },
     ]
@@ -101,8 +97,8 @@ const PackagesComponent = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center w-full pt-[30px] md:pt-[40px] lg:pt-[50px]">
-                <p className='text-primary text-[1.3rem] font-[500] text-center mb-[20px]'>
+            <div className="flex flex-col items-center w-full pt-[30px] md:pt-[40px]">
+                <p className='text-primary text-[1.5rem] font-[500] text-center mb-[20px]'>
                     {t('upto_200')}
                 </p>
                 <Button title={t('cont_sale')} url='/contact' />

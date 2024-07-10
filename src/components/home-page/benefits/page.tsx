@@ -46,7 +46,7 @@ const Benefits = () => {
 
 
     return (
-        <div className='flex flex-col py-[70px] md:py-[100px] lg:py-[130px] px-[20px] md:px-[50px] xl:px-[80px] min-h-[calc(100vh-50px)] justify-center'>
+        <div className='flex flex-col py-[70px] md:py-[100px] lg:py-[130px] px-[20px] md:px-[50px] xl:px-[80px] md:min-h-[calc(100vh-50px)] justify-center'>
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] lg:gap-x-[32px]`}>
                 <div className='flex flex-col justify-center'>
                     <h1 className='text-primary text-center lg:text-left [font-size:_clamp(2rem,2rem+1vw,3rem)] font-[500]'>

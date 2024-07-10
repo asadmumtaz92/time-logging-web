@@ -48,17 +48,17 @@ const WhyChoose = () => {
 
 
     return (
-        <div className={`flex flex-col items-center min-h-[calc(100vh-50px)] gap-y-[50px] px-[20px] md:px-[50px] xl:px-[80px] py-[100px] border-b`}>
+        <div className={`flex flex-col justify-center items-center md:min-h-[calc(100vh-50px)] gap-y-[50px] px-[20px] md:px-[50px] xl:px-[80px] py-[50px] border-b`}>
             <h2 className="font-jost font-[700] text-primary [font-size:_clamp(1.5rem,1.5rem+1vw,3rem)] leading-[1.2] text-center w-full">
                 {t('why_choose')}
             </h2>
 
-            <Accordion type="single" collapsible className='min max-w-[700px] m-auto w-full' defaultValue={'item-1'}>
+            <Accordion type="single" collapsible className='min max-w-[550px] lg:max-w-[700px] m-auto w-full' defaultValue={'item-1'}>
                 {wcList?.map((item: any) => {
                     return (
                         <AccordionItem key={item?.id} value={`item-${item?.id}`}>
-                            <AccordionTrigger className='font-[450] text-primary text-[1.4rem] hover:no-underline px-[10px]'>{item?.title}</AccordionTrigger>
-                            <AccordionContent className='font-[300] text-desc text-[1.2rem] px-[15px]'>{item?.desc}</AccordionContent>
+                            <AccordionTrigger className='tt font-[450] text-primary text-[1.15rem] md:text-[1.4rem] hover:no-underline'>{item?.title}</AccordionTrigger>
+                            <AccordionContent className='font-[300] text-desc text-[1rem] md:text-[1.2rem] px-[5px]'>{item?.desc}</AccordionContent>
                         </AccordionItem>
                     )
                 })}

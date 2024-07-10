@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className="flex flex-col items-center pt-[20px]">
+                    <div className="flex flex-col items-center pt-[20px]">
                         <h1 className='flex text-white text-[1.75rem] leading-[34px] text-center tracking-[0.01rem] font-[500] mb-[12px]'>
                             {t('join')} {t('author')}!
                         </h1>
@@ -40,11 +40,11 @@ const Footer = () => {
                             <div className='flex flex-col lg:flex-row lg:justify-between gap-x-[32px]'>
                                 <div className='flex flex-col w-full items-start'>
                                     <Image src={'/logo.svg'} priority className="w-[200px] max-h-[80px]" width={12} height={12} alt="" />
-                                    <p className='text-white text-[1.3rem] leading-[1.6rem] font-[400] mt-[15px]'>
+                                    <p className='text-white text-[1.2rem] leading-[1.5rem] font-[400] mt-[15px]'>
                                         {t('join_our')}
                                     </p>
                                     {/* Subscribe FORM */}
-                                    <form method='POST' className='flex flex-col sm:flex-row items-center w-full pt-[30px]'>
+                                    <form method='POST' className='flex flex-col sm:flex-row items-center w-full pt-[20px]'>
                                         <input
                                             type='text'
                                             autoCorrect=''
@@ -74,7 +74,7 @@ const Footer = () => {
 
             {/* COPY RIGHTS */}
             <div className="col-start-1 col-end-13">
-                <div className={`grid grid-cols-1 border-t-[1px] border-t-divider mt-6 lg:mt-0`}>
+                <div className={`grid grid-cols-1 border-t-[1px] border-t-divider mt-10`}>
                     <div className='w-full pt-[32px] pb-[24px] font-[500] text-[1.1rem] text-center text-white'>
                         {`© 2024 ${t('author')}. ${t('all_right')}`}
                     </div>

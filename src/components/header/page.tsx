@@ -79,7 +79,7 @@ export default function Header({ localeHeader }: any) {
         <header id="navbar" className={`flex justify-between items-center w-full fixed z-[10] h-[50px]`}>
             <div data-aos="fade-down" className="flex justify-between items-center bg-white text-desc h-[50px] border-b-[0.5px] w-full px-[20px] md:px-[50px] xl:px-[80px]">
                 <Link href="/" data-aos="fade-down" className="flex items-center mr-2">
-                    <Image src={'/logo.svg'} priority className="w-full max-h-[50px]" width={12} height={12} alt="logged fair time logging time tracking" />
+                    <Image src={'/logo.svg'} priority className="w-full max-w-[150px] max-h-[50px]" width={12} height={12} alt="logged fair time logging time tracking" />
                 </Link>
                 {isMobile
                     ? <>

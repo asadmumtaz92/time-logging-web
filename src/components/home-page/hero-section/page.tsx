@@ -39,7 +39,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="flex flex-1 justify-center mt-[60px] lg:mt-0">
+            <div className="flex flex-1 justify-center mt-[40px] lg:mt-0">
                 <Image src={'/images/hero-section.svg'} priority className='flex w-[90%] h-[90%] sm:w-[70%] md:max-w-[500px] lg:w-[80%] lg:h-[100%] xl:w-[80%] xl:h-[90%]' width={110} height={100} alt={t('hs_title')} />
             </div>
         </div>
