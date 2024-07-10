@@ -27,9 +27,9 @@ const HeroSection = () => {
                     {t('hs_desc')}
                 </p>
 
-                <div className='flex flex-col sm:flex-row mt-[30px] items-center'>
+                <div className='flex flex-col sm:flex-row mt-[30px] sm:items-center'>
                     <Button title={t('hs_sche')} url='/signup' />
-                    <h2 className="mt-6 sm:mt-0 ml-5 text-primary/[0.7] [font-size:_clamp(1.3rem,0.7rem+1vw,2rem)] leading-[1] font-[700] tracking-tight">
+                    <h2 className="mt-[20px] sm:mt-0 sm:ml-5 text-primary/[0.7] [font-size:_clamp(1.3rem,0.7rem+1vw,2rem)] leading-[1] font-[700] tracking-tight">
                         {t('hs_day')}
                     </h2>
                 </div>
