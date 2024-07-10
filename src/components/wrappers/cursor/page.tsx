@@ -65,6 +65,9 @@ const CursorFollower = () => {
         }
     }, [])
 
+    if (windowSize < 768) {
+        return null;
+    }
 
     return (
         <>
