@@ -4,6 +4,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 import Button from '@/components/Comman-UI/button/page'
 import Image from 'next/image'
+import DisplayCharacter from '@/components/Comman-UI/char-disp/page'
 
 
 const HeroSection = () => {
@@ -20,7 +21,7 @@ const HeroSection = () => {
                 </div>
 
                 <h2 className="font-[700] text-primary [font-size:_clamp(1rem,2.2rem+1vw,2.5rem)] leading-[1.2] w-[100%] md:w-[95%] lg:w-[95%] xl:w-[95%]">
-                    {t('hs_title')}
+                    <DisplayCharacter text={t('hs_title')} speed={20} />
                 </h2>
 
                 <p className="mt-[20px] !font-[300] text-desc [font-size:_clamp(0.8rem,0.8rem+1vw,1.3rem)] leading-[1.1] w-[100%] md:w-[90%] lg:w-[95%] xl:w-[90%]">
